@@ -1,0 +1,5 @@
+Sanity is a SPA (single page application)
+This code is just a local version of our application
+actual content is on content lake.
+changes done in schemas and them npm start
+will generate a url where our project is hosted.
