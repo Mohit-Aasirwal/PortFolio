@@ -6,10 +6,10 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background-color: aqua;
+  background-color: transparent;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid cyan;
+  border: 1px solid transparent;
   position: fixed;
   z-index: 2;
 }
@@ -50,7 +50,7 @@
       text-transform: uppercase;
       font-weight: 500;
 
-      transition: all 0.6s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &:hover {
         color: var(--secondary-color);
@@ -133,7 +133,7 @@
           text-transform: uppercase;
           font-weight: 500;
 
-          transition: all 0.6s ease-in-out;
+          transition: all 0.3s ease-in-out;
 
           &:hover {
             color: var(--secondary-color);
