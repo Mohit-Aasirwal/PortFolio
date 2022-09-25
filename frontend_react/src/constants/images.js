@@ -27,6 +27,8 @@ import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
+import quasar from '../assets/quasar_eso2103.gif'
+
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
@@ -38,6 +40,7 @@ import spotify from '../assets/spotify.png';
 export default {
   email,
   mobile,
+  quasar,
   api,
   cpp,
   css,
