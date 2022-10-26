@@ -3,6 +3,7 @@ import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import{motion} from 'framer-motion';
 import "./Navbar.scss";
+
 const Navbar = () => {
 const [Toggle, setToggle] = useState(false);
 
@@ -29,13 +30,14 @@ const [Toggle, setToggle] = useState(false);
             <ul> <HiX onClick={()=>setToggle(false)}/>
               {["Home", "About", "Work", "Skills", "Contact"].map((item) => (
             <li key={`{item}`}>
-              <a href={`#${item}`}>{item}</a>
+              <a href={`#${item}`} onClick={()=>setToggle(false)}>{item}</a>
             </li>
           ))}</ul>
             </motion.div>
           )}
         </div>
       </nav>
+
     </div>
   );
 };
