@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./Header.scss";
-import { AppWrap } from '../../wrapper'
+import { AppWrap } from "../../wrapper";
 
 const Header = () => {
   const scaleVariants = {
@@ -16,7 +16,7 @@ const Header = () => {
     },
   };
   return (
-    <div  className="app__header app__flex">
+    <div className="app__header app__flex">
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1.2 }}
@@ -26,8 +26,9 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>
               <img
-                src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif"
-                alt="wave"
+                src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"
+                alt="wave-emoji"
+                width="30px"
               />
             </span>
             <div style={{ marginLeft: 20 }}>
@@ -72,4 +73,4 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header, 'Home');
+export default AppWrap(Header, "Home");

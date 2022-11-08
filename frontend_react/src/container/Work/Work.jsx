@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import "./Work.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
-import "./Work.scss";
 
 const Work = () => {
   const [activeFilter, setactiveFilter] = useState("All");
@@ -11,7 +11,7 @@ const Work = () => {
   const [Works, setWorks] = useState([]);
   const [FilterWork, setFilterWork] = useState([]);
   useEffect(() => {
-    const query = '*[_type=="works"]';
+    const query = '*[_type=="Works"]';
     client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);
@@ -34,7 +34,7 @@ const Work = () => {
       <h2 className="head-text">
         My
         <span> Projects </span>
-        and Experience{" "}
+        and Technical Know-how{" "}
       </h2>
       <div className="app__work-filter">
         {[

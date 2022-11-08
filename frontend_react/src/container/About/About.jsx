@@ -25,7 +25,7 @@ const About = () => {
   useEffect(() => {
     const query = '*[_type == "abouts"]';
 
-    client.fetch(query).then((data) => setabouts(data));
+    client.fetch(query).then((data) => setabouts(data)); //
   }, []);
   return (
     <div className="app__about">
